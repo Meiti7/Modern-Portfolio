@@ -4,11 +4,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Poppins',sans-serif;
     font-size: 22px;
     background-color: #EAF4F4;
     overflow-x:hidden;
+   
 }
 a {
     text-decoration: none;
@@ -45,8 +49,9 @@ p {
     text-align: center;
 
 }
-.section-title span {
-    color: #FFD166;
+
+ span {
+    color: #f3c04b;
 }
 .cta {
     display: inline-block;
@@ -56,7 +61,7 @@ p {
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    margin-top: 30px;
+    margin-top: 10vw;
     transition: 0.3s ease background-color;
     transition-property: background-color, color;
 }
@@ -68,7 +73,7 @@ p {
     font-size: 2rem;
     text-transform: uppercase;
     color: white;
-    margin-right: 8vw;  
+    margin-right: 20vw;  
     letter-spacing: 3px; 
 }
 .brand h1 span {
@@ -80,16 +85,18 @@ p {
     z-index: 1000;
     left: 0;
     top: 0;
-    width: 100vw;
+    width: 90vw;
     height: auto;
 }
 #header .header {
     min-height: 8vh;
+    min-width: fit-content;
     background-color: rgba(31, 30, 30, 0.24);
 }
 #header .header .nav-bar {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     height: 100%;
     max-width: 1300px;
@@ -272,10 +279,10 @@ p {
 #hero h1:nth-child(1) span {
     animation-delay: .5s;
 }
-#hero h1:nth-child(3) span {
+#hero h1:nth-child(2) span {
     animation-delay: 2.5s;
 }
-#hero h1:nth-child(2) span {
+#hero h1:nth-child(3) span {
     animation-delay: 1.5s;
 }
 #hero .cta{
@@ -761,6 +768,19 @@ h1.section-title {
 
 /*End Media Query For Desktop*/
 @media only screen and (min-width: 1200px){
+    #header .hamburger {
+        display: none;
+    }
+    #header .nav-list ul {
+        position:;
+        display: block;
+        height: auto;
+        left: 0;
+        background-color: transparent;
+    }
+    #header .nav-list ul li a {
+        font-size: 1;
+    }
     #services .service-bottom .service-item{
         flex-basis: 22%;
         margin: 1.5%;
