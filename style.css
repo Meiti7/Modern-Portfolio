@@ -90,7 +90,6 @@ p {
 }
 #header .header {
     min-height: 8vh;
-    min-width: fit-content;
     background-color: rgba(31, 30, 30, 0.24);
 }
 #header .header .nav-bar {
@@ -165,7 +164,7 @@ p {
     cursor: pointer;
     transform: scale(.8);
     margin-right: 20px;
-    left: 380%;
+    
 }
 #header .hamburger:after {
     position: fixed;
@@ -740,6 +739,7 @@ h1.section-title {
     #header .hamburger {
         display: none;
     }
+  
     #header .nav-list ul {
         position: initial;
         display: block;
@@ -752,7 +752,7 @@ h1.section-title {
         display: inline-block;
     }
     #header .nav-list ul li a {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     #header .nav-list ul a:after {
         display: none;
@@ -762,24 +762,6 @@ h1.section-title {
     #services .service-bottom .service-item {
         flex-basis:22%;
         margin: 1.5%;
-    }
-    
-}
-
-/*End Media Query For Desktop*/
-@media only screen and (min-width: 1200px){
-    #header .hamburger {
-        display: none;
-    }
-    #header .nav-list ul {
-        position:;
-        display: block;
-        height: auto;
-        left: 0;
-        background-color: transparent;
-    }
-    #header .nav-list ul li a {
-        font-size: 1;
     }
     #services .service-bottom .service-item{
         flex-basis: 22%;
@@ -799,5 +781,5 @@ h1.section-title {
     #about .about .col-left .about-img {
        top: -25%;
     }
-
+    
 }
